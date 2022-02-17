@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxhwa1LLwnbQTx91n2gA5ffkOzuJK5_gA&callback=initMap&libraries=&v=weekly"
+    defer></script>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="col-8 main">
+        <h4 class="row title">Yangi buyurtma berish</h4>
+        <div class="btn-group height-rounded-circle bg-light-gray">
+          <button class="btn menu-btn height-rounded-circle text-secondary" id="burger-btn">Burger</button>
+          <button class="btn menu-btn height-rounded-circle text-secondary" id="lavash-btn">Lavash</button>
+          <button class="btn menu-btn height-rounded-circle text-secondary" id="garniyer-btn">Garniyer</button>
+          <button class="btn menu-btn height-rounded-circle text-secondary" id="salad-btn">Salatlar</button>
+          <button class="btn menu-btn height-rounded-circle text-secondary" id="beverage-btn">Ichimlik</button>
+          <button class="btn menu-btn height-rounded-circle text-secondary" id="sous-btn">Sous</button>
+        </div>
+        <div class="product">
+          <div class="card shadow-sm" id="garniyer">
+            <img src="img/kartoshka-fri.jfif" alt="" class="card-img-top">
+            <div class="card-body">
+              <span class="card-title">Kortofel fri (150g)</span>
+              <span class="card-subtitle">Картофель фри специи</span>
+              <div class="row">
+                <span class="card-text col-7"><b>5,000 </b>UZS</span>
+                <btn class="card-link col-5 first-add btn-green btn"><span class="plus">+</span> Qo'shish</btn>
+                <div class="card-link col-5 secondary-add rounded btn-group hide">
+                  <btn class="minus btn">-</btn>
+                  <span class="value"></span>
+                  <btn class="plus btn">+</btn>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm" id="garniyer">
+            <img src="img/batat.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <span class="card-title">Batat (100g)</span>
+              <span class="card-subtitle">Сладкий картофель</span>
+              <div class="row">
+                <span class="card-text col-7"><b>5,000 </b>UZS</span>
+                <btn class="card-link col-5 first-add btn-green btn"><span class="plus">+</span> Qo'shish</btn>
+                <div class="card-link col-5 secondary-add rounded btn-group hide">
+                  <btn class="minus btn">-</btn>
+                  <span class="value"></span>
+                  <btn class="plus btn">+</btn>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm" id="garniyer">
+            <img src="img/sirnie-shariki.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <span class="card-title">Сырние шарики (140g)</span>
+              <span class="card-subtitle">С сыром чеддер</span>
+              <div class="row">
+                <span class="card-text col-7"><b>5,000 </b>UZS</span>
+                <btn class="card-link col-5 first-add btn-green btn"><span class="plus">+</span> Qo'shish</btn>
+                <div class="card-link col-5 secondary-add rounded btn-group hide">
+                  <btn class="minus btn">-</btn>
+                  <span class="value"></span>
+                  <btn class="plus btn">+</btn>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 half-main">
+        <div class="row header">
+          <h4 class="col-9 title">Buyurtmalar ro'yxati</h4>
+          <div class="col-3 trash bg-light-gray rounded-circle">
+            <img src="img/trash.svg" alt="" class="trash-icon">
+          </div>
+        </div>
+        <div class="col-12 customer-product border rounded">
+            <div class="row each-price">
+              <div class="col-12 not">
+                <div class="row deliver deliver-1">
+                  <span class="product-name col-6">Shaurma o'rtacha</span>
+                  <div class="product-overall-price col-6">
+                    <span class="product-number">4</span>
+                    *<span class="product-real-price">
+                      <span class="product-price">15,000</span>
+                      UZS</span>
+                  </div>
+                </div>  
+                <div class="row deliver deliver-2">
+                  <span class="product-name col-6">Klab sendwich</span>
+                  <div class="product-overall-price col-6">
+                    <span class="product-number">2</span>
+                    *<span class="product-real-price">
+                      <span class="product-price">23,000</span>
+                      UZS</span>
+                  </div>
+                </div>
+                <div class="row deliver deliver-3">
+                  <span class="product-name col-6">Coca-Cola 1,5</span>
+                  <div class="product-overall-price col-6">
+                    <span class="product-number">1</span>
+                    *<span class="product-real-price">
+                      <span class="product-price">9,000</span>
+                      UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overall-price bg-light-gray rounded">
+              <span class="overall-price-title">Umumiy summa</span>
+              <div class="overall-price-soum"><b>120,000</b> UZS</div>
+            </div>
+        </div>
+        <div class="customer-name">
+          <label for="customer-name" class="label">Mijoz ismi</label>
+          <input type="name" id="customer-name" name="customer-name" class="input border rounded" value="Muhammamad Jumayev">
+        </div>
+        <div class="customer-phone">
+          <label for="customer-phone" class="label">Telefon raqam</label>
+          <input type="tel" id="customer-phone" name="customer-phone" class="input border rounded"  value="(+998 93) 461-41-88" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </div>
+        <div class="customer-location">
+          <label for="customer-location" class="label">Manzil</label>
+          <input type="name" id="customer-location" name="customer-location" class="input border rounded" value="Yunusobod t, Bog'ishamol 12, 34">
+          <div id="map" class="rounded"></div>
+        </div>
+        <btn class="btn btn-green save">Saqlash</btn>
+      </div>
+    </div>
+  </div>
+  <script src="js/jQuery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
