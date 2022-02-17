@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: 0 15px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 10px;
+  opacity: 0.99;
+}
+.rect1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.icon {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  transition: 0.5s all;
+  transform: scale(0.8);
+}
+.facebook-icon {
+  background-image: url("../img/facebook.png");
+}
+.twitter-icon {
+  background-image: url("../img/twitter.png");
+}
+.google-icon {
+  background-image: url("../img/google.png");
+}
+.dribble-icon {
+  background-image: url("../img/dribble.png");
+}
+.skype-icon {
+  background-image: url("../img/scype.png");
+}
+.rect2 {
+  position: absolute;
+  width: 125%;
+  height: 125%;
+  transform: rotate(40deg) translateX(-15%) translateY(150%);
+}
+.facebook .rect2 {
+  background-color: #0d76ec;
+}
+.twitter .rect2 {
+  background-color: #35cdff;
+}
+.google .rect2 {
+  background-color: #dc4c3a;
+}
+.dribble .rect2 {
+  background-color: #f26999;
+}
+.skype .rect2 {
+  background-color: #03b0f0;
+}
+.social-btn:hover .rect2 {
+  animation: animateRect 0.5s linear 1;
+  transform: rotate(40deg) translateX(-15%) translateY(0);
+}
+.social-btn:hover .icon {
+  z-index: 100;
+  transform: scale(1);
+}
+.social-btn:hover .facebook-icon {
+  background-image: url("../img/facebook_w.png");
+}
+.social-btn:hover .twitter-icon {
+  background-image: url("../img/twitter_w.png");
+}
+.social-btn:hover .google-icon {
+  background-image: url("../img/google_w.png");
+}
+.social-btn:hover .dribble-icon {
+  background-image: url("../img/dribble_w.png");
+}
+.social-btn:hover .skype-icon {
+  background-image: url("../img/scype_w.png");
+}
+@keyframes animateRect {
+  0% {
+    transform: rotate(40deg) translateX(-15%) translateY(150%);
+  }
+  50% {
+    transform: rotate(40deg) translateX(-15%) translateY(-15%);
+  }
+  100% {
+    transform: rotate(40deg) translateX(-15%) translateY(0);
+  }
+}

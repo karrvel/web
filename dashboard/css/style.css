@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(../font/Gilroy-Regular.ttf); }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #dfe1eb; }
+
+.row > * {
+  padding: 0 5px; }
+
+.content {
+  width: calc(100% - 25px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px #ededf6;
+  padding: 20px 10px; }
+  .content .bold-text {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 0.01em;
+    color: #000000; }
+    .content .bold-text span {
+      display: inline-block;
+      margin-left: 3px;
+      color: #a6acbe; }
+  .content .light-text {
+    display: flex;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #a6acbe; }
+  .content .color {
+    display: flex;
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    margin-right: 10px; }
+
+.mb {
+  margin-bottom: 25px; }
+
+.container {
+  margin-top: 10px; }
+  .container .title {
+    display: flex;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #a6acbe;
+    margin-bottom: 20px; }
+  .container .general-info .col-3.no-margin,
+  .container .general-info .col-6.no-margin,
+  .container .other-info-month .col-3.no-margin,
+  .container .other-info-month .col-6.no-margin {
+    margin: 0; }
+  .container .general-info .col-3 .col-3 .main1-img,
+  .container .general-info .col-6 .col-3 .main1-img,
+  .container .other-info-month .col-3 .col-3 .main1-img,
+  .container .other-info-month .col-6 .col-3 .main1-img {
+    width: 50px;
+    height: 50px; }
+  .container .general-info .col-3 .col-9 .info-card,
+  .container .general-info .col-6 .col-9 .info-card,
+  .container .other-info-month .col-3 .col-9 .info-card,
+  .container .other-info-month .col-6 .col-9 .info-card {
+    width: 100%;
+    margin-left: 15px; }
+  .container .monthly-graph > .col-12 > .row,
+  .container .monthly-mark > .row,
+  .container .monthly-study-type > .row {
+    border-radius: 0; }
+  .container .monthly-graph > .col-12 > .row:first-child,
+  .container .monthly-mark > .row:first-child,
+  .container .monthly-study-type > .row:first-child {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1px; }
+  .container .monthly-graph > .col-12 > .row:last-child,
+  .container .monthly-mark > .row:last-child,
+  .container .monthly-study-type > .row:last-child {
+    border-radius: 0 0 10px 10px; }
+  .container .monthly-graph > .col-12 .title .bold-text,
+  .container .monthly-mark .title .bold-text,
+  .container .monthly-study-type .title .bold-text {
+    font-size: 11px; }
+  .container .monthly-graph-info .col-6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .container .monthly-graph-info .col-6:first-child .color {
+      background: #6f52ed; }
+    .container .monthly-graph-info .col-6:last-child .color {
+      background: #ff7a00; }
+  .container .monthly-mark .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+  .container .monthly-mark .students-mark {
+    padding-bottom: 15px; }
+    .container .monthly-mark .students-mark .col-12 > .row {
+      margin-bottom: 10px; }
+  .container .monthly-study-type .type-study-graph-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container .monthly-study-type .type-study-graph-img-div .type-study-graph-img {
+      width: 150px; }
+  .container .monthly-study-type .bold-text {
+    font-size: 12px; }
+  .container .monthly-study-type .type-study-graph-info .col-12 .row {
+    padding: 0 10px;
+    margin-bottom: 7.5px;
+    display: flex;
+    align-items: center; }
+    .container .monthly-study-type .type-study-graph-info .col-12 .row:nth-child(1) .color {
+      background: #6f52ed; }
+    .container .monthly-study-type .type-study-graph-info .col-12 .row:nth-child(2) .color {
+      background: #ffb800; }
+    .container .monthly-study-type .type-study-graph-info .col-12 .row:nth-child(3) .color {
+      background: #ff4c61; }
+    .container .monthly-study-type .type-study-graph-info .col-12 .row:nth-child(4) .color {
+      background: #33d69f; }
+    .container .monthly-study-type .type-study-graph-info .col-12 .row .color {
+      padding: 0; }
+
+.monthly-general-graph-info {
+  width: calc(50% - 10px);
+  transform: translateX(5px);
+  margin-right: auto; }
+
+.main2 {
+  height: 500px; }
+
+/*# sourceMappingURL=style.css.map */

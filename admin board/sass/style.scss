@@ -1,0 +1,390 @@
+$green: #009688;
+$blue: #3e50b4;
+$gray: #bbbbbb;
+$cyan: #00bbd3;
+$cleanerColor: #455a64;
+$checkCoLor: #35464d;
+$mainBack: #eeeeee;
+$linkColor: #04988a;
+$textColor: #7f7f7f;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $mainBack;
+
+  .location-logo,
+  .date-icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.wrapper {
+  width: 700px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: transparent;
+  padding: 25px;
+
+  .wrapper-50 {
+    width: 50%;
+    display: flex;
+    padding: 10px 10px;
+
+    .card {
+      width: 100%;
+      display: flex;
+      margin-bottom: 15px;
+
+      .card-2,
+      .card-1 {
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .title {
+        font-size: 21px;
+        height: 125px;
+      }
+
+      .card-1,
+      .card-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+          background: #fff;
+        }
+
+        & > * > * {
+          display: flex;
+          padding: 0 10px;
+        }
+
+        .box2 {
+          background: #fff;
+          width: 100%;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+
+          .link {
+            text-decoration: none;
+            color: $linkColor;
+            margin: 10px;
+            margin-left: 0;
+            font-size: 13px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .card-1 {
+        width: 50%;
+      }
+
+      .card-2 {
+        width: 100%;
+      }
+    }
+    .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      .btn {
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .wrapper1 {
+    .card1 {
+      .title {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        background: $green;
+        color: #fff;
+        font-weight: light;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      .text {
+        display: flex;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+
+      .box1 {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2px;
+      }
+    }
+
+    .card2 {
+      .card-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .cover {
+          display: flex;
+          width: 25%;
+          height: 100%;
+          background: $gray;
+        }
+
+        .main {
+          width: 75%;
+          background: transparent;
+
+          .title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            height: auto;
+          }
+          .auth {
+            font-size: 14px;
+            color: #00000080;
+            margin-bottom: 15px;
+          }
+
+          .box1 {
+            display: flex;
+            margin-bottom: 2px;
+            background: #fff;
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+    .card3 {
+      .box1 {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 2px;
+        background: #fff;
+
+        .title {
+          display: flex;
+          color: $linkColor;
+          font-size: 20px;
+          margin-bottom: 15px;
+          height: auto;
+        }
+
+        .text {
+          display: flex;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .wrapper2 {
+    .card1 {
+      .title {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        background: $cyan;
+        color: #fff;
+        font-weight: light;
+        padding: 10px;
+      }
+      .box1 {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .card2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .main1 {
+        margin-right: 5px;
+      }
+      .title {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
+        background: $blue;
+        color: #fff;
+        font-weight: light;
+        padding: 10px;
+      }
+      .box1 {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+
+        .btns {
+          justify-content: space-between;
+
+          .btn {
+            margin: 0;
+          }
+        }
+      }
+      .main2 .title {
+        background: $green;
+      }
+    }
+
+    .card3 {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: flex-start;
+
+      .main1,
+      .main2 {
+        width: 49%;
+      }
+
+      .box {
+        background: transparent;
+
+        .title {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          height: 100px;
+          background: $blue;
+          color: #fff;
+          font-weight: light;
+          padding: 20px 30px 5px 10px;
+          margin-bottom: 1px;
+        }
+        .date {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          width: 100%;
+          padding: 10px;
+          background: $blue;
+          color: #fff;
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+      }
+
+      .cleaner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        background: $cleanerColor;
+        color: #fff;
+        font-size: 21px;
+        font-weight: lighter;
+      }
+
+      .main2 {
+        .box1 {
+          width: 100%;
+          padding: 10px 5px;
+          background: $checkCoLor;
+          color: #fff;
+          margin-bottom: 1px;
+
+          .name {
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+          .check-div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .check-text {
+              margin-left: 10px;
+              font-size: 14px;
+            }
+
+            .checker {
+              display: none;
+            }
+            .checkbox {
+              width: 15px;
+              height: 15px;
+              border: 1px #bfbfbf solid;
+              border-radius: 2px;
+              box-sizing: border-box;
+              cursor: pointer;
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: transparent;
+            }
+            .checker:disabled + .checkbox .check-mark {
+              display: none;
+            }
+            .check-mark {
+              width: 80%;
+              height: 80%;
+              border-radius: 10px;
+              display: none;
+            }
+            .checker:checked + .checkbox .check-mark {
+              display: flex;
+            }
+          }
+        }
+
+        .box2 {
+          padding: 7.5px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          background: $checkCoLor;
+          color: #fff;
+          font-size: 13px;
+          font-weight: lighter;
+
+          .location-logo {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
