@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carusel</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container pt-2">
+    <div class="row title mb-3">
+      <div class="col-auto mr-auto">
+        <h1>Biz haqimizda <br> boshqalar fikri</h1>
+      </div>
+    </div>
+    <section>
+      <div class="carousel slide" id="commentCarousel" data-ride="carousel" data-interval="2000">
+        <!--Indicators-->
+        <ul class="carousel-indicators">
+          <li data-target="#commentCarousel" data-slide-to="0"></li>
+          <li data-target="#commentCarousel" data-slide-to="1" class="active"></li>
+          <li data-target="#commentCarousel" data-slide-to="2"></li>
+        </ul>
+        <!--Slide-->
+        <div class="carousel-inner">
+          <div class="carousel-item shadow-sm">
+            <img src="img/avatar.png" alt="" class="item-img-top">
+            <div class="item-header"><span>Someone</span></div>
+            <div class="item-subtitle"><span>Coder</span></div>
+            <div class="item-body"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis praesentium soluta neque, mollitia doloremque sint perferendis, expedita
+                veritatis qui ratione, ut at. Aliquid consequuntur a earum consequatur voluptas impedit
+                iste incidunt, culpa adipisci quaerat ullam sed tempora unde voluptate.</span></div>
+            <img src="img/“.png" alt="" class="back-img back-img1">
+            <img src="img/”.png" alt="" class="back-img back-img2">
+          </div>
+          <div class="carousel-item shadow-sm active">
+            <img src="img/avatar.png" alt="" class="item-img-top">
+            <div class="item-header"><span>Null ;)</span></div>
+            <div class="item-subtitle"><span>Coder</span></div>
+            <div class="item-body"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis praesentium soluta neque, mollitia doloremque sint perferendis, expedita
+                veritatis qui ratione, ut at. Aliquid consequuntur a earum consequatur voluptas impedit
+                iste incidunt, culpa adipisci quaerat ullam sed tempora unde voluptate.</span></div>
+            <img src="img/“.png" alt="" class="back-img back-img1">
+            <img src="img/”.png" alt="" class="back-img back-img2">
+          </div>
+          <div class="carousel-item shadow-sm">
+            <img src="img/avatar.png" alt="" class="item-img-top">
+            <div class="item-header"><span>Unknown</span></div>
+            <div class="item-subtitle"><span>Coder</span></div>
+            <div class="item-body"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis praesentium soluta neque, mollitia doloremque sint perferendis, expedita
+                veritatis qui ratione, ut at. Aliquid consequuntur a earum consequatur voluptas impedit
+                iste incidunt, culpa adipisci quaerat ullam sed tempora unde voluptate.</span></div>
+            <img src="img/“.png" alt="" class="back-img back-img1">
+            <img src="img/”.png" alt="" class="back-img back-img2">
+          </div>
+        </div>
+        <!--Controls-->
+        <a href="#commentCarousel" class="carousel-control carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-icon carousel-control-prev-icon"></span>
+        </a>
+        <a href="#commentCarousel" class="carousel-control carousel-control-next" data-slide="next">
+          <span class="carousel-control-icon carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="main-back"></div>
+    </section>
+  </div>
+  <!--
+    background = #EEF2F5
+    text, indicator = #1DD1A1
+    slide-control-background = #EEF2F5
+    slide-control-btn = #919395
+  -->
+  <script src="js/jQuery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload File</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-5">
+  <div class="uploader">
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" multiple id="customFile">
+      <label class="custom-file-label" for="customFile" id="file-label">Multiple file uploader</label>
+    </div>
+    <table class="table table-sm table-striped table-bordered">
+      <thead>
+        <tr class="text-center">
+          <th>№</th>
+          <th>Name</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody id="file-info">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/jQuery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
