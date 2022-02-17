@@ -1,0 +1,76 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(Poppins-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Poppins, sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 6em;
+	font-weight: 500;
+	letter-spacing: 5px;
+	cursor: pointer;
+	color: #c0c0c0;
+}
+
+h1 span {
+	transition: 1s;
+}
+
+h1:hover span{
+	display: block;
+	font-size: 4rem;
+}
+
+h1:hover span span{
+	display: inline-block;
+	font-size: 3rem;
+	font-family: DancingScript, cursive; 
+}
+
+h1:hover span:nth-child(1) span:after {
+	content: 'etter yourself';
+}
+
+h1:hover span:nth-child(2) span:after {
+	content: 'ncourage yourself';
+}
+
+h1:hover span:nth-child(3) span:after {
+	content: 'ove yourself';
+}
+
+h1:hover span:nth-child(4) span:after {
+	content: 'nspire yourself';
+}
+
+h1:hover span:nth-child(5) span:after {
+	content: 'ducate yourself';
+}
+
+h1:hover span:nth-child(6) span:after {
+	content: 'alidate yourself';
+}
+
+h1:hover span:nth-child(7) span:after {
+	content: 'nergise yourself';
+}

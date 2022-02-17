@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>mOsAiC</title>
+	<link rel="stylesheet" href="decorator.css">
+</head>
+<body>
+	<div id="wrapper"></div>
+	<script type="text/javascript">
+		for (let i = 1; i <= 1000; i++) {
+			const box = document.createElement('div');
+			box.classList.add('box');
+			document.querySelector('#wrapper').appendChild(box);
+		}
+
+		const randColorBlock = document.querySelectorAll('.box');
+
+		function addColors() {
+			randColorBlock.forEach(e=>{
+				e.style.backgroundColor = randomColor();
+			})
+		}
+
+		function randomColor() {
+			let chars = "1234567890abcdef";
+			let colorLength = 6;
+			let color = "";
+
+			for (let i = 1; i <= colorLength; i++) {
+				let randomColor = Math.floor(Math.random() * chars.length);
+				color += chars.substring(randomColor, randomColor+1)
+			}
+			return "#"+color
+
+		}
+
+		addColors()
+	</script>
+</body>
+</html>
